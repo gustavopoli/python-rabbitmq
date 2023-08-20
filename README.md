@@ -1,0 +1,1 @@
+# Basic Example RabbitMQ with Python
