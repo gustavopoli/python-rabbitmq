@@ -1,7 +1,8 @@
 import pika
 
 def fnc_callback(ch, method, properties, body):
-    print(body)
+    decoded_message = body.decode("utf-8")
+    print(decoded_message)
 
 connect_parameters = pika.ConnectionParameters(
     host="localhost",
